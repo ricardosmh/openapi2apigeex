@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<TargetEndpoint name="default">
+  <Description>default sensedia target connection</Description>
+  <PreFlow name="PreFlow">
+    <Request/>
+    <Response/>
+  </PreFlow>
+  <Flows/>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <HTTPTargetConnection>
+    <LoadBalancer>
+      <Server name="sensedia-gateway" />
+    </LoadBalancer>
+    <Path>{proxy.basepath}</Path>
+  </HTTPTargetConnection>
+</TargetEndpoint>

@@ -1,0 +1,29 @@
+{
+    "name": "APIPRODUCT_NAME",
+    "displayName": "APIPRODUCT_NAME",
+    "approvalType": "auto",
+    "attributes": [
+      {
+        "name": "access",
+        "value": "private"
+      }
+    ],
+    "description": "APIPRODUCT_NAME",
+    "environments": [
+      "eval"
+    ],
+    "operationGroup": {
+      "operationConfigs": [
+        {
+          "apiSource": "API_PROXY_NAME",
+          "operations": [
+            {
+              "resource": "/"
+            }
+          ],
+          "quota": {}
+        }
+      ],
+      "operationConfigType": "proxy"
+    }
+}

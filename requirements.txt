@@ -1,0 +1,2 @@
+pip3 install requests
+npm install -g openapi2apigee
