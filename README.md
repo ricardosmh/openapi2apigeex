@@ -5,7 +5,8 @@ WORK IN PROGRESS
 For this example, imagine you need to start migrating APIs from Sensedia into Apigee. You might need to create a facade in Apigee and start poiting to target backends incrementally. This might help creating that initial layer (the facade).
 
 What is this for:
-- This scripts allows you to automatically import APIs into apigee based on a directory of open apis.
+- This scripts allows you to automatically create, configure and import APIs into apigee based on a directory of open api specification files in yaml format.
+- You can leave all you oas.yaml files in the **/openapis** directory and the script will make sure all of those get created and deployed in apigee.
 - Create an apiproduct for each API
 - Implement a standard and static target endpoint for downstream connection.
 - Deploys the created revision for a selected environment.
